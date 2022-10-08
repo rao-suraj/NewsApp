@@ -15,7 +15,7 @@ class NewsAdapter(private val context:Context, val article: List<Article>, priva
 
     inner class NewViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView),View.OnClickListener{
         var newsImage: ImageView=itemView.findViewById<ImageView>(R.id.image_move)
-        var newsTitle: TextView=itemView.findViewById<TextView>(R.id.title)
+        var newsTitle: TextView=itemView.findViewById<TextView>(R.id.tit)
         var newsdiscription : TextView=itemView.findViewById<TextView>(R.id.newsDiscription)
         init {
             itemView.setOnClickListener(this)
